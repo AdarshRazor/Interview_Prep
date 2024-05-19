@@ -196,7 +196,7 @@ helpful for components that take some time to fetch the data. provide a better U
 
 useful for lazy-loading components. let load a component only when it needs it. 
 
-<img height="380em" src="">
+<img height="380em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/2105f09e-d9c0-4a3d-80a9-b77171761ad7">
 
 ## Error Boundaries
 
