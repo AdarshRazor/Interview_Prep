@@ -1,0 +1,1 @@
+query selector to fetch change server state. 
