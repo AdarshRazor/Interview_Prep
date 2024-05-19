@@ -11,4 +11,4 @@
 * [9. DOM](./topics/9.DOM.md)
 * [10. Classes](./topics/10.Classes.md)
 * [Miscellaneous](./topics/Miscellaneous.md)
-* [questions](./topics/Questions.md)
+* [Questions](./Questions.md)
