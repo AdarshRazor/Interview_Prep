@@ -185,3 +185,5 @@ perfects for displaying:
 * modals
 * dropdowns
 * tooltips
+
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/3e0a8a05-9beb-4891-a31b-2b955e4177aa)
