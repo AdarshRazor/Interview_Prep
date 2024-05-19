@@ -63,4 +63,16 @@ premitive and non-premitive
 
 > what are promises ?
 
-> create a 
+> let vs var
+
+```javascript
+console.log(a)
+let a = 1
+
+console.log(a)
+var a = 1
+```
+
+JavaScript hoists `var` declarations to the top of their scope. So in the second snippet, var a is like saying a = 1; var a;. This can cause confusion and unexpected behavior, especially for beginners. Nightmare error in big code.
+
+`let` variables are not hoisted. You can't access a let variable before it's declared. It will throw a simple error.
