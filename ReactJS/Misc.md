@@ -4,9 +4,9 @@
 
 query selector to fetch change server state. 
 
-<img height="280em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/466ce0ef-8cb1-4d5b-9a61-cdb2c12e470b">
+<img height="180em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/466ce0ef-8cb1-4d5b-9a61-cdb2c12e470b">
 
-<img height="280em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/215d0f9a-2635-4621-a083-dae1a6313f25">
+<img height="180em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/215d0f9a-2635-4621-a083-dae1a6313f25">
 
 * ## Derive values without state. we can use directly without using another hook
 
@@ -22,14 +22,14 @@ query selector to fetch change server state.
 
 dependencies are the values certain hooks need. that also in form of array. If u dont add them then its going to annoys u, provide error known as stale closure. UI not displaying in correct data and all.
 
-<img height="280em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/bffd96c2-dcd8-42f2-ab53-c5e362ef5f6b">
+<img height="180em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/bffd96c2-dcd8-42f2-ab53-c5e362ef5f6b">
 
-<img height="280em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/bfeddbaa-892a-48b2-9c46-6ad34e879a6d">
+<img height="180em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/bfeddbaa-892a-48b2-9c46-6ad34e879a6d">
 
 <img height="280em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/63d4c369-ca9e-4d04-9145-5a6289380d92">
 
 * ## Use useEffect Last
 
-<img height="280em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/53074424-a252-473b-807d-4c31a8485a34">
+<img height="180em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/53074424-a252-473b-807d-4c31a8485a34">
 
-<img height="280em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/5f77b811-e0e1-4d7e-9ec3-3e900d6aee12">
+<img height="180em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/5f77b811-e0e1-4d7e-9ec3-3e900d6aee12">
