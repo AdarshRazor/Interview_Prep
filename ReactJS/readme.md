@@ -86,3 +86,8 @@ A pure React component behaves similarly to a pure function:
 **Renders the same JSX for the same props and state:** If a component receives the same props (data passed from parent components) and has the same state, it should always render the identical JSX output.
 
 **Minimal side effects:** While some side effects might be necessary (like fetching data in some scenarios), pure components generally avoid them for better performance and predictability.
+
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/9689d910-f90c-4b93-8b38-92d1d7473a88)
+
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/e8e4aa8d-90cf-405d-8ba9-a5c7e6010543)
+
