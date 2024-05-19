@@ -107,6 +107,8 @@ Hooks are the way to add features to function componenets. 5 main types
     * `useMemo()`
     * `useCallback()`
 
+more on hooks [read more](reactHooks.md)
+
 ## Purity
 
 A pure React component behaves similarly to a pure function:
