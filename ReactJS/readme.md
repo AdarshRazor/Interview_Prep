@@ -139,7 +139,7 @@ useEffect(() => {
 
 Sometimes you have to step out of react and work directly with the DOM.
 
-<img height="480em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/29051939-d047-4f0a-a7f0-c05aa65ecdab">
+<img height="380em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/29051939-d047-4f0a-a7f0-c05aa65ecdab">
 
 ## Context
 
@@ -186,5 +186,18 @@ perfects for displaying:
 * dropdowns
 * tooltips
 
-<img height="480em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/3e0a8a05-9beb-4891-a31b-2b955e4177aa">
+<img height="380em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/3e0a8a05-9beb-4891-a31b-2b955e4177aa">
 
+## Suspense
+
+Special components that help to handle loading a component or its data. 
+
+helpful for components that take some time to fetch the data. provide a better User experience, "fall back" to a component until data arrives. 
+
+useful for lazy-loading components. let load a component only when it needs it. 
+
+<img height="380em" src="">
+
+## Error Boundaries
+
+Catch app breaking error and shows a fallback components to shows the error. 
