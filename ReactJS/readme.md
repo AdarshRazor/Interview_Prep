@@ -91,3 +91,50 @@ A pure React component behaves similarly to a pure function:
 
 <img height="180em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/e8e4aa8d-90cf-405d-8ba9-a5c7e6010543">
 
+## Strict Mode
+
+How to prevent erros? Use Strict Mode. 
+Detect problem in development
+
+```jsx
+import {StrictMode} from 'react'
+
+<StrictMode>
+    <App/>
+</StrictMode>
+```
+
+## Effects
+
+What about the stuffs outside react ? 
+
+what If we want to talk to:
+* talk to browser api
+* make a request to server
+
+if you do have an external system, you need a way to step outside from react
+
+`Effects` are code that reach outside react application. we can use *side effects* best done in event handlers
+
+Request (side effect) made in event handler.
+```javascript
+function handleSubmit(e){
+    e.preventDefault();
+    post('/api/register',{email, password})
+}
+```
+
+if side effect can't be run in event handlers, we use `useEffect()` instead.
+
+Fetch data when component loads
+```javascript
+useEffect(() => {
+    fetchData().then(data =>{
+        // use data here
+    })
+})
+```
+
+## Refs
+
+Sometimes you have to step out of react and work directly with the DOM.
