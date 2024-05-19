@@ -138,3 +138,5 @@ useEffect(() => {
 ## Refs
 
 Sometimes you have to step out of react and work directly with the DOM.
+
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/29051939-d047-4f0a-a7f0-c05aa65ecdab)
