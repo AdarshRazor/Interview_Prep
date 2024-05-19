@@ -213,4 +213,4 @@ export default ExampleComponent;
 * Best for simplifying async data handling.
 * Occasionally used. 🔵
 
-[Learn more](https://www.youtube.com/watch?v=LOH1l-MP_9k)
+<a href="https://www.youtube.com/watch?v=LOH1l-MP_9k" target="_blank" >Learn more</a>
