@@ -108,9 +108,9 @@ import {StrictMode} from 'react'
 
 What about the stuffs outside react ? 
 
-what If we want to talk to:
-* talk to browser api
-* make a request to server
+What If we want to talk to:
+* talk to browser API
+* make a request to the server
 
 if you do have an external system, you need a way to step outside from react
 
@@ -139,7 +139,7 @@ useEffect(() => {
 
 Sometimes you have to step out of react and work directly with the DOM.
 
-![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/29051939-d047-4f0a-a7f0-c05aa65ecdab)
+<img height="280em" src="https://github.com/AdarshRazor/Interview_Prep/assets/33658792/29051939-d047-4f0a-a7f0-c05aa65ecdab">
 
 ## Context
 
@@ -154,7 +154,7 @@ steps:
 ```javascript
 const AppContext = createContext()
 ```
-2. Wrap that parents compnent in context components
+2. Wrap that parents component in context components
 
 ```javascript
 <AppContext.Provider>
