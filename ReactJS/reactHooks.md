@@ -15,15 +15,29 @@
 
 ## 🔴 State Hooks
 
+🟢: Used Often
+
+🔵: Used Occasionally
+
+🟠: Rarely used
+
 ### useState
 * Manages local component state.
 * Best used for simple state management.
 * Very frequently used. 🟢
 
-### useReducer
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/056ad9f2-118d-40fc-9e1c-293bfce17dc5)
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/ac4c8835-aa46-4229-a4cf-97771b1d894b)
+
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/d38f6549-cebd-4555-996f-1db2f55a608d)
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/c9fb3407-2dd9-4bc4-b965-04f27f45e2de)
+
+### useReducer (for more complex state management)
 * Manages state logic outside the component.
 * Best for complex state logic.
 * Occasionally used. 🔵
+
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/2a511f85-496a-405d-878e-abff177b5c68)
 
 ### useSyncExternalStore
 * Subscribes to external store updates.
@@ -44,15 +58,21 @@
 
 ## 🔴 Effect Hooks
 
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/ea7cb290-ef4c-4659-8c52-4e19390a521d)
+
 ### useEffect
 * Handles side effects in functional components.
 * Best for data fetching, subscriptions.
 * Very frequently used. 🟢
 
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/832fee4f-d35b-4fbc-8ab5-a392df604d2d)
+
 ### useLayoutEffect
 * Runs after DOM updates but before the browser paint.
 * Best for DOM measurements and synchronizations.
 * Occasionally used. 🔵
+
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/07faa00b-3c6d-4ff1-8e00-035e68695bdd)
 
 ### useInsertionEffect
 * Injects styles into the DOM before mutations.
