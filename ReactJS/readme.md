@@ -17,3 +17,4 @@ rendering
 take the code and display the result.
 use something like Virtual DOM 'VDOM' to know how and when to render something. DOM (Document Object Model)
 
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/ff90c309-e44e-44a2-b6cd-8a976e80e8ad)
