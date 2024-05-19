@@ -228,4 +228,4 @@ useful for lazy-loading components. let load a component only when it needs it.
 
 ## Error Boundaries
 
-Catch app breaking error and shows a fallback components to shows the error. 
+Catch app-breaking error and shows a fallback components to shows the error. 
