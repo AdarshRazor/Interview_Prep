@@ -21,10 +21,71 @@
 
 🟠: Rarely used
 
-### useState
-* Manages local component state.
+### useState (manage component and can't modify directly)
+* Manages local component state. immutable (should use state setter functions or `this.setState()`
 * Best used for simple state management.
 * Very frequently used. 🟢
+
+Here's how you can change state in a functional component using the useState hook:
+
+```javascript
+import React, { useState } from 'react';
+
+function ExampleComponent() {
+  // Define a state variable 'count' and a setter function 'setCount'
+  const [count, setCount] = useState(0);
+
+  // Function to increment the count
+  const incrementCount = () => {
+    // Call the setter function to update the 'count' state
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      {/* Button to trigger incrementCount function */}
+      <button onClick={incrementCount}>Increment</button>
+    </div>
+  );
+}
+
+export default ExampleComponent;
+```
+
+In a class component, you would use `this.state` and `this.setState()`:
+
+```javascript
+import React, { Component } from 'react';
+
+class ExampleComponent extends Component {
+  constructor(props) {
+    super(props);
+    // Initialize state
+    this.state = {
+      count: 0
+    };
+  }
+
+  // Function to increment the count
+  incrementCount() {
+    // Call setState to update the 'count' state
+    this.setState({ count: this.state.count + 1 });
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        {/* Button to trigger incrementCount function */}
+        <button onClick={() => this.incrementCount()}>Increment</button>
+      </div>
+    );
+  }
+}
+
+export default ExampleComponent;
+```
 
 ![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/056ad9f2-118d-40fc-9e1c-293bfce17dc5)
 ![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/ac4c8835-aa46-4229-a4cf-97771b1d894b)
@@ -46,10 +107,12 @@
 
 ## 🔴 Ref Hooks
 
-### useRef
-* Creates a mutable ref object.
+### useRef (Reference and can modify directly)
+* Creates a mutable ref object. refs let us *remember* data like useState. don't trigger re-renders
 * Best for accessing DOM elements or persisting values.
 * Frequently used. 🟢
+
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/53b01979-aca9-42dc-ab6a-7ee259ccd588)
 
 ### useImperativeHandle
 * Customizes instance value for refs.
@@ -67,15 +130,17 @@
 
 ![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/832fee4f-d35b-4fbc-8ab5-a392df604d2d)
 
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/07faa00b-3c6d-4ff1-8e00-035e68695bdd)
+
 ### useLayoutEffect
 * Runs after DOM updates but before the browser paint.
 * Best for DOM measurements and synchronizations.
 * Occasionally used. 🔵
 
-![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/07faa00b-3c6d-4ff1-8e00-035e68695bdd)
+![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/6a49d7a0-fa64-4874-8a4c-c0ca3fb6bd4a)
 
-### useInsertionEffect
-* Injects styles into the DOM before mutations.
+### useInsertionEffect (Runs before any effect hook)
+* Injects styles into the DOM before mutations. 
 * Best for critical style updates.
 * Less commonly used. 🟠
 
@@ -143,3 +208,5 @@
 * Fetches async data in components.
 * Best for simplifying async data handling.
 * Occasionally used. 🔵
+
+[Learn more](https://www.youtube.com/watch?v=LOH1l-MP_9k)
