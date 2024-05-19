@@ -1,3 +1,42 @@
+# React Notes
+
+## Index
+1. [Components](#components)
+2. [Props](#props)
+    - [Key Prop](#key-prop)
+3. [Rendering](#rendering)
+    - [React Rendering Steps](#react-rendering-steps)
+4. [Event Handling](#event-handling)
+5. [State](#state)
+6. [Controlled Components](#controlled-components)
+7. [Hooks](#hooks)
+    - [Types of Hooks](#types-of-hooks)
+8. [Purity](#purity)
+9. [Strict Mode](#strict-mode)
+10. [Effects](#effects)
+11. [Refs](#refs)
+12. [Context](#context)
+    - [Steps to use Context](#steps-to-use-context)
+13. [Portals](#portals)
+14. [Suspense](#suspense)
+15. [Error Boundaries](#error-boundaries)
+
+## Components
+
+Building blocks and visible parts of your application, such as buttons and inputs, can be reused multiple times. Every component is a function that returns markup, typically JSX (JavaScript XML). Unlike static HTML, React components are dynamic. Data is displayed using `{...}`. Because JavaScript functions can only return one element, you need to wrap everything in a single div or an empty component (fragment).
+
+## Props
+
+Props (properties) are the inputs to a React component, used to pass data and event handlers down to child components. You can pass anything as a prop.
+
+### Key Prop
+A special prop used by React to identify which items have changed, are added, or are removed. It helps to optimize the rendering process. Avoid using the index from `map` as the key prop; use a unique identifier instead.
+
+## Rendering
+
+Render
+
+
 ## Components
 
 building blocks, visible parts, button, inpouts, use as mnay times as u want. 
@@ -11,6 +50,7 @@ JS Function return only one thing, that why we need to wrap up everything in one
 properties of an object.
 Make prop, give it a value and use pro value.
 can u pass anything as a prop ? YES
+
 KEY PROP: react can tell one component apart from another. unique property to identify the component. so it can give error. Use index of map function instead.
 
 ## Rendering
