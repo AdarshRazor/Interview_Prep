@@ -140,3 +140,48 @@ useEffect(() => {
 Sometimes you have to step out of react and work directly with the DOM.
 
 ![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/29051939-d047-4f0a-a7f0-c05aa65ecdab)
+
+## Context
+
+Pass data through react components. 
+
+most react app have tons of nested components and get to get data passed through multiple components using props that dont actually need it. Context helps us to jump though the tree at any level and without making props.
+
+steps:
+
+1. Create your context in parent components
+
+```javascript
+const AppContext = createContext()
+```
+2. Wrap that parents compnent in context components
+
+```javascript
+<AppContext.Provider>
+    <App/>
+</AppContext.Provider>
+```
+
+3. Put data on value prop:
+```javascript
+<AppContext.Provider value="random">
+```
+
+4. Get data with useContext
+```javascript
+function Title(){
+    const text = useContext(AppContext)
+    return <h1>{text}</h1>
+}
+```
+
+## Portals
+
+like context but for components.
+
+portals are for components that cant be displayed properly. 
+
+perfects for displaying:
+* modals
+* dropdowns
+* tooltips
