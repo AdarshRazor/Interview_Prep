@@ -174,6 +174,9 @@
 5. **How do you clean up resources in a class component?**
    Resources are cleaned up in the `componentWillUnmount` method, such as removing event listeners or canceling network requests.
 
+   ![image](https://github.com/AdarshRazor/Interview_Prep/assets/33658792/823024fc-5704-404f-84f3-008cffd45f20)
+
+
 ## 7. Hooks (Functional Components)
 
 ### Questions:
