@@ -216,7 +216,7 @@
    Events are handled by passing a function as a prop to the event attribute: `<button onClick={handleClick}>`.
 
 2. **What are synthetic events in React?**
-   Synthetic events are cross-browser wrapper around native events, ensuring they behave consistently across different browsers.
+   Web broswers have different way of handeling events like clicks and key presses. React uses "synthetic events" to make sure that, no matter which browser you're using, events work the same way.
 
 3. **How do you pass arguments to event handlers in React?**
    Use an arrow function to pass arguments: `<button onClick={() => handleClick(arg)}>`.
@@ -226,6 +226,11 @@
 
 5. **How do you stop event propagation in React?**
    Use `event.stopPropagation()` inside the event handler.
+   
+   Event Propagation in react referes to the way events travel through the DOM tree when an event is triggered. It consists of three phases:
+   * Capturing Phase: Start of the root of the DOM and travels down to the target element.
+   * Target Phase: Event reached the target element here it was originally triggered.
+   * Bubbling Phase: Event then travels back up from the target element to the root, passing through all its ancestor elements.
 
 ## 9. Conditional Rendering
 
@@ -272,7 +277,7 @@
    Use a unique identifier from the data, such as an ID, or use the array index (though not recommended).
 
 4. **What are the consequences of not using keys in lists?**
-   React may not update the components efficiently, leading to performance issues and unexpected behavior.
+   React may not update the `components efficiently`, leading to `performance issues` and unexpected behavior.
 
 5. **How do you handle dynamic lists in React?**
    Manage the list state using `useState` and update the state when the list changes.
@@ -291,16 +296,16 @@
    Use the `onChange` event handler to update the state with the input value.
 
 2. **What are controlled components in React?**
-   Controlled components have their value controlled by React state.
+   Controlled components have their value controlled by `React state.`
 
 3. **How do you handle multiple inputs in a React form?**
-   Use a single change handler that updates the state based on the input name.
+   Use a `single change handler` that updates the state based on the input name.
 
 4. **How do you implement form validation in React?**
-   Implement validation logic inside the change or submit handler and update the state with validation messages.
+   Implement `validation logic` inside the `change or submit handler` and update the state with validation messages.
 
 5. **What are uncontrolled components and when should you use them?**
-   Uncontrolled components store their own state internally and are accessed via refs. Use them for simple forms or when integrating with non-React code.
+   Uncontrolled components `store their own state internally` and are accessed via refs. Use them for simple forms or when integrating with non-React code.
 
 ## 12. Context API
 
@@ -366,7 +371,7 @@
    Use `useState` in functional components or `this.state` in class components.
 
 2. **What is lifting state up in React?**
-   Moving state to the nearest common ancestor of components that need to share the state.
+   Moving state to the `nearest common ancestor` of components that need to share the state.
 
 3. **How do you manage global state using the Context API?**
    Use `Context.Provider` to provide the state and `useContext` to consume it in functional components.
