@@ -11,26 +11,30 @@
 
 ### Answers:
 1. **What is React?**
-   React is a JavaScript library for building user interfaces, maintained by Facebook. It allows developers to create reusable UI components.
+   React is a JavaScript library for building user interfaces, maintained by Facebook. It allows developers to create `reusable UI components`.
 
 2. **What are the key features of React?**
-   - JSX: JavaScript XML, a syntax extension for writing HTML-like code in JavaScript.
-   - Components: Building blocks of a React application.
-   - Virtual DOM: Efficient way of updating the view in a web application.
-   - One-way data binding: Data flows in a single direction.
-   - Unidirectional data flow: Ensures the application state is predictable.
+   - `JSX`: JavaScript XML, a syntax extension for writing HTML-like code in JavaScript.
+   - `Components`: Building blocks of a React application.
+   - `Virtual DOM`: Efficient way of updating the view in a web application. 
+      ```
+      When JavaScript interacts with the HTML structure, it manipulates the real DOM.
+      Direct manipulation of the real DOM can be slow and inefficient, especially for complex and large applications, because even small changes can cause the entire document to be re-rendered.
+      ``` 
+   - `One-way data binding`: Data flows in a single direction.
+   - `Unidirectional data flow`: Ensures the application state is predictable.
 
 3. **What are the advantages of using React?**
-   - Easy to learn and use.
-   - Component-based architecture allows for reusable code.
-   - High performance due to virtual DOM.
-   - Strong community support and extensive ecosystem.
-   - Can be used for both client-side and server-side rendering.
+   - `Easy` to learn and use.
+   - `Component-based architecture` allows for reusable code.
+   - High performance due to `virtual DOM`.
+   - Strong `community support` and extensive ecosystem.
+   - Can be used for both `client-side` and `server-side` rendering.
 
 4. **What are the disadvantages of using React?**
-   - Rapidly changing environment, requiring continuous learning.
-   - JSX syntax can be unfamiliar and challenging for new developers.
-   - Requires integration with other libraries for full-featured applications (e.g., routing, state management).
+   - Rapidly changing environment, requiring `continuous learning`.
+   - JSX syntax can be `unfamiliar and challenging` for new developers.
+   - Requires `integration with other libraries` for full-featured applications (e.g., routing, state management).
 
 5. **How does React compare to other frameworks like Angular and Vue.js?**
    - React is a library focused on building UI components, while Angular is a full-fledged framework.
@@ -49,7 +53,7 @@
 
 ### Answers:
 1. **What are functional components in React?**
-   Functional components are simple JavaScript functions that return JSX. They do not have their own state or lifecycle methods before React 16.8.
+   Functional components are `simple JavaScript functions that return JSX`. They **do not** have their own `state or lifecycle methods` before React 16.8.
 
 2. **What are class components in React?**
    Class components are ES6 classes that extend from `React.Component` and can have their own state and lifecycle methods.
@@ -60,8 +64,8 @@
    - Functional components use Hooks to manage state and side effects.
 
 4. **What are stateful and stateless components?**
-   - Stateful components maintain their own state and can change their output over time.
-   - Stateless components do not maintain state and always render the same output given the same props.
+   - Stateful components `maintain their own state` and can change their output over time.
+   - Stateless components `do not maintain state` and always render the same output given the same props.
 
 5. **How do you convert a class component to a functional component?**
    Replace the class definition with a function and use Hooks to manage state and lifecycle methods.
@@ -81,19 +85,19 @@
 
 2. **What are the benefits of using JSX?**
    - JSX makes code easier to read and write.
-   - It allows embedding JavaScript expressions directly within HTML.
-   - JSX is type-safe and provides better error messages.
+   - It allows embedding `JavaScript expressions directly within HTML`.
+   - JSX is type-safe and provides `better error messages`.
 
 3. **How do you embed expressions in JSX?**
    You can embed JavaScript expressions in JSX using curly braces `{}`.
 
 4. **What are the differences between JSX and HTML?**
-   - JSX allows embedding JavaScript expressions.
-   - In JSX, attributes are camelCase (e.g., `className` instead of `class`).
-   - JSX must have a single parent element.
+   - JSX allows `embedding JavaScript expressions`.
+   - In JSX, attributes are **camelCase** (e.g., `className` instead of `class`).
+   - JSX must have a `single parent` element.
 
 5. **Can you use JSX without React?**
-   JSX is designed to be used with React, but with a proper transpiler setup, it can be used with other libraries that support JSX syntax.
+   JSX is designed to be used with React, but with a `proper transpiler setup`, it can be used with other libraries that support JSX syntax.
 
 ## 4. Props
 
@@ -109,7 +113,7 @@
    Props (short for properties) are read-only attributes used to pass data from parent to child components.
 
 2. **How do you pass props to a component?**
-   Props are passed to a component as attributes in the JSX tag: `<Component propName={value} />`.
+   Props are passed to a component as **attributes** in the JSX tag: `<Component propName={value} />`.
 
 3. **What are default props and how do you define them?**
    Default props are values assigned to props if no value is provided by the parent component. They can be defined using the `defaultProps` property.
@@ -131,7 +135,7 @@
 
 ### Answers:
 1. **What is state in React?**
-   State is an object that holds data that may change over the lifecycle of the component.
+   State is an object that holds data that `may change` over the lifecycle of the component.
 
 2. **How do you initialize state in a class component?**
    State is initialized in the constructor: `this.state = { key: value }`.
