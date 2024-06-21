@@ -160,7 +160,7 @@
 
 ### Answers:
 1. **What is the purpose of the constructor method in a React class component?**
-   The constructor is used for initializing state and binding event handlers.
+   The constructor is used for `initializing state and binding event handlers`.
 
 2. **What is the `componentDidMount` method used for?**
    `componentDidMount` is called after the component is mounted and is used for initializing data that requires DOM elements.
