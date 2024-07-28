@@ -1,3 +1,5 @@
+# React Things to keep in mind.
+
 * ## React State must be immutable
 
 * ## Don't use state for everything
