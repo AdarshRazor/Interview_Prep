@@ -19,15 +19,15 @@
 
 ## Components
 
-building blocks, visible parts, button, inpouts, use as mnay times as u want. 
+building blocks, visible parts, buttons, inputs, use as many times as u want. 
 
-every component is a function which return markup. they return JSX 
+every component is a function that returns markup. they return JSX 
 
 unlike html (static content), React is Dynamic. 
 
 display data using {...} 
 
-JS Function return only one thing, that why we need to wrap up everything in one div or empty compoenent
+JS Function returns only one thing, that why we need to wrap up everything in one div or empty compoenent
 
 ## Props
 
