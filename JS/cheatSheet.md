@@ -250,3 +250,114 @@ console.log(triple(5)); // Output: 15
 ### 🔴 Push, Pop, Shift, Unshift
 
 ![image](https://github.com/user-attachments/assets/9c5141f9-45c5-4141-ac8f-b0b567672edf)
+
+* Push: add end
+* Pop: remove end
+* Shift: remove first
+* UnShift: add first
+
+<hr>
+
+### Objects
+
+* A data structure used to store collections of key-value pairs.
+* Pairs are known as properties
+* Key is a string (or symbol) | Value can be any data type, including other **objects or functions**.
+
+```javascript
+const person = {
+  name: "Alice",          // Property with string value
+  age: 25,                // Property with number value
+  isStudent: true,        // Property with boolean value
+  greet: function () {    // Method (function as a property)
+    return `Hello, my name is ${this.name}`;
+  },
+};
+
+// Accessing properties
+console.log(person.name); // Output: Alice
+console.log(person.age);  // Output: 25
+
+// Calling a method
+console.log(person.greet()); // Output: Hello, my name is Alice
+
+// Adding a new property
+person.hobby = "Reading";
+console.log(person.hobby); // Output: Reading
+
+// Modifying a property
+person.age = 26;
+console.log(person.age); // Output: 26
+
+// Deleting a property
+delete person.isStudent;
+console.log(person.isStudent); // Output: undefined
+```
+
+<hr>
+
+### Hoisting
+
+* **Variable declarations** and **function declarations** are moved (or "hoisted") to the `top` of their containing `scope` during the `compilation phase`. 
+* This means you can use variables or call functions before they are declared in your code.
+
+```js
+console.log(a); // Output: undefined
+var a = 10;
+console.log(a); // Output: 10
+
+console.log(b); // ReferenceError: Cannot access 'b' before initialization
+let b = 20;
+
+sayHello(); // Output: Hello!
+function sayHello() {
+  console.log("Hello!");
+}
+```
+
+### async function
+
+* asynchronous functions always returns a Promise
+
+* value is wrapped in a Promise. if error, then rejeected promise.
+
+* use await to pause the execution until Promise
+
+```javascript
+function fetchData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Data fetched!");
+    }, 2000); // Simulates a delay
+  });
+}
+
+async function displayData() {
+  console.log("Fetching data...");
+  const data = await fetchData(); // Waits for the Promise to resolve
+  console.log(data);
+}
+
+displayData(); 
+// Output:
+// Fetching data...
+// (after 2 seconds) Data fetched!
+```
+
+#### Error Handling
+
+```javascript
+async function fetchWithError() {
+  throw new Error("Something went wrong!");
+}
+
+async function handleFetch() {
+  try {
+    await fetchWithError();
+  } catch (error) {
+    console.log(error.message); // Output: Something went wrong!
+  }
+}
+
+handleFetch();
+```
