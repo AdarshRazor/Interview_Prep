@@ -249,3 +249,4 @@ console.log(triple(5)); // Output: 15
 
 ### 🔴 Push, Pop, Shift, Unshift
 
+![image](https://github.com/user-attachments/assets/9c5141f9-45c5-4141-ac8f-b0b567672edf)
