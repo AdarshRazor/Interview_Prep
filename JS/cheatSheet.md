@@ -361,3 +361,83 @@ async function handleFetch() {
 
 handleFetch();
 ```
+
+<hr>
+
+### Null vs Undefined
+
+* Null: assigned but the value is False. Typeof is Object (absense of any obj value). `No value or Empty`
+
+* Undefined: not assigned. (absense of a value by default).
+
+| Aspect             | null                         | undefined                      |
+|--------------------|------------------------------|---------------------------------|
+| **Meaning**        | Intentional absence of value | Absence of value (default)     |
+| **Who assigns it?**| Programmer explicitly assigns it | Automatically assigned by JS   |
+| **Type**           | "object"                    | "undefined"                    |
+| **Use case**       | Represents "empty" or "null" | Represents "not initialized" or "missing" |
+| **Example**        | `let a = null;`             | `let b;` or `console.log(obj.key);` |
+
+<hr>
+
+### Coercion 
+
+```
+a + 1 = a1
+a - 1 = NaN
+
+c =+ a
+c += a (wrong)
+```
+
+Auto Conversion: automatic or implicit conversion of values from one type to another
+* Implicit Conversion: automatic or implicit conversion
+* Explicit Conversion: Manually convert: `String(), Number() or Boolean()`
+
+```js
+//------------------Implicit Conversion -------------------->
+// String Concatenation
+console.log(5 + "5"); // Output: "55" (Number 5 is coerced to a string)
+
+// Subtraction
+console.log("10" - 2); // Output: 8 (String "10" is coerced to a number)
+
+// Boolean Context
+console.log(!!"hello"); // Output: true (Non-empty string is coerced to true)
+console.log(!!0); // Output: false (0 is coerced to false)
+
+
+
+
+// ------------------Explicit conversion -------------------->
+// Convert to String
+let num = 123;
+console.log(String(num)); // Output: "123"
+
+// Convert to Number
+let str = "456";
+console.log(Number(str)); // Output: 456
+
+// Convert to Boolean
+let empty = "";
+console.log(Boolean(empty)); // Output: false
+```
+
+<hr>
+
+### Short-Circuit
+
+stops the execution as soon as the `result can be determined without evaluating` the remaining sub-expressions.
+
+```javascript
+// Short-circuit evaluation with logical AND
+let result1 = false && someFunction();
+console.log(result1);
+// Output: false
+
+// Short-circuit evaluation with logical OR
+let result2 = true || someFunction();
+console.log(result2);
+// Output: true
+```
+
