@@ -1,3 +1,9 @@
+*{
+  background-color: #282c34;
+  color: antiquewhite;
+  font-size: larger;
+}
+
 .App {
   text-align: center;
 }
