@@ -6,3 +6,4 @@
 * [React](./ReactJS/Interview/100_React_Question/)
 * [NodeJS](./NodeJS_Express/Interview/100_Node_Express_Question/)
 * [Mongodb](./MongoDB/Interview/)
+* [Python](./Python/)
